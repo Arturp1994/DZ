@@ -15,6 +15,7 @@ function HW1() {
     return (
                 <div className='message'>
                     <hr/>
+
                     <Message
                         avatar={messageData.avatar}
                         name={messageData.name}
