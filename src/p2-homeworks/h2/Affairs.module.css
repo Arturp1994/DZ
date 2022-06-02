@@ -27,4 +27,13 @@
 
 .allButton {
     padding: 10px;
+    text-align: right;
+    flex-grow:1;
+
+}
+.allName {
+    flex-grow:1;
+}
+.allPriority {
+    flex-grow:1;
 }
