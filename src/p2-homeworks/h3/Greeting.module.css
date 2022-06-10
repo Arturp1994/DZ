@@ -5,3 +5,18 @@
 .error {
     border: 1px solid red;
 }
+
+.noterror {
+    border: 1px solid blue;
+}
+
+.Namerror{
+    color: red;
+}
+.all{
+    background-color: #f1e3a0;
+    width: 520px;
+    height: 100px;
+text-align: center;
+
+}
