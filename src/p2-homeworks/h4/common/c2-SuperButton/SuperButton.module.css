@@ -1,7 +1,32 @@
-.default {
 
+.default {
+    margin: 10px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 700;
+    padding: .5em 2em;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin: 5px;
+    width: 100px;
 }
+.default:hover { background: rgb(84, 137, 229); }
+.default:active { background: #0258ea; }
+
 
 .red {
     background: red;
+    margin: 10px;
+    display: inline-block;
+    color: #000000;
+    font-weight: 700;
+    padding: .5em 2em;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin: 10px;
 }
+.red:hover { background: rgb(84, 137, 229); }
+.red:active { background: #0258ea; }
+
