@@ -1,0 +1,38 @@
+.prejunior {
+margin: 50px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.junior{
+    margin: 30px;
+}
+
+.juniorthebest{
+    margin: 30px;
+}
+
+.all{
+    position: relative;
+    left: -360px;
+    width: 700px;
+    height: 50px;
+    margin-top: 5px;
+    transition: left .2s linear;
+
+
+}
+
+.all:hover {
+    left: 0px;
+}
+
+.figure img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.error img{
+    width: 1500px;
+}
