@@ -1,0 +1,11 @@
+.spanStyle{
+    color: #3F51B5;
+}
+.divSpan{
+    margin: 23px;
+}
+.spanStyle img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
