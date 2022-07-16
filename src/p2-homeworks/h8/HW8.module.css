@@ -1,0 +1,13 @@
+.buttons{
+    display: flex;
+}
+
+.all{
+    margin: 5px;
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+.button_1{
+    padding: 5px;
+}
