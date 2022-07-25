@@ -3,30 +3,30 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
-    const [date, setDate] = useState<Date>(new Date())
+    const [date, setDate] = useState<Date>()
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        // stop
+        clearInterval(timerId)
     }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-            // setDate
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
 
     const onMouseEnter = () => {
         setShow(true)
-        setTimerId(stringTime)
+
     }
     const onMouseLeave = () => {
-        setShow(!show)
+        setShow(false)
     }
 
-    const stringTime = date.getHours() // fix with date
-    const stringDate = date.getDate()// fix with date
+    const stringTime = date?.toLocaleTimeString() || <br/> // fix with date
+    const stringDate = date?.toLocaleDateString() || <br/>
 
     return (
         <div>
@@ -37,10 +37,12 @@ function Clock() {
                 {stringTime}
             </div>
 
-            {show && (
+            {show ? (
                 <div>
                     {stringDate}
                 </div>
+            ) : (
+                <br/>
             )}
 
             <SuperButton onClick={start}>start</SuperButton>
