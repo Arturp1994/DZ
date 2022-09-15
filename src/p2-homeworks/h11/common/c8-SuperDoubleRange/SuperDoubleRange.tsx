@@ -1,6 +1,9 @@
 import React, {ChangeEvent} from 'react'
 import css from './SuperDoubleRange.module.css'
 
+// тип пропсов обычного инпута
+// type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
     value?: [number, number]
@@ -23,6 +26,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     }
 ) => {
     // сделать самому, можно подключать библиотеки
+
     const defMin = 0, defMax = 100, defStep = 1;
 
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
@@ -47,11 +51,19 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
             }
         }
     }
+
     const finalRangeMinClassName = `${css.range} ${css.rangeMin} ${className ? className : ''}`
     const finalRangeMaxClassName = `${css.range} ${css.rangeMax} ${className ? className : ''}`
 
     return (
         <>
+            {/*<div className={css.wrap} role="group" aria-labelledby="multi-lbl">
+                <div id="multi-lbl">Multi thumb slider:</div>
+                <label className={css.srOnly} htmlFor="a">Value A:</label>
+                <input id="a" type="range" min="-50" value="-30" max="50"/>
+                <label className={css.srOnly} htmlFor="b">Value B:</label>
+                <input id="b" type="range" min="-50" value="20" max="50"/>
+            </div>*/}
 
             <div className={css.inline}>
                 <div className={css.wrap}>
